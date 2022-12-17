@@ -3,12 +3,30 @@
 html, body {
   height: 100%;
 }
+.column{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.buttons{
+  display: flex;
+  gap: 5px;
+}
+.header{
+  font-weight: 1000;
+  font-size: 20px;
+}
+.text{
+  display: flex;
+  flex-wrap: wrap;
+}
 
 body {
   font-family: Roboto, sans-serif;
   margin: 0;
   background: #aaa;
   color: #333;
+  padding: 60px;
   /* I'll give you this one for free lol */
   display: flex;
   align-items: center;
@@ -16,6 +34,11 @@ body {
 }
 
 .modal {
+  display: flex;
+  flex: 1;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 20px;
   background: white;
   width: 480px;
   border-radius: 10px;
@@ -23,6 +46,7 @@ body {
 }
 
 .icon {
+  flex-shrink: 0;
   color: royalblue;
   font-size: 26px;
   font-weight: 700;
@@ -36,6 +60,7 @@ body {
 }
 
 .close-button {
+  flex-shrink: 0;
   background: #eee;
   border-radius: 50%;
   color: #888;
